@@ -2,7 +2,13 @@
 
 We provide sources codes of our Tabu search algorithm based on spark. And used it to solve the variant of VRP problem.
 
-# Usage example
+### Getting Started
+
+Before using the project, make sure you have set up the environment of hadoop and spark.
+
+We use [Archery](https://github.com/meetup/archery) which is a two-dimensional R-Tree written in Scala to partition the data. You need to make sure that the number of partitions of the rtree for the data is the same as the number of partitions you need to set, which is a power of two.
+
+### Usage example
 
 The following commands can be used to submit a spark application. In this application, the tabu tenure is 25, the number of partitions is 32 and the diversification rate is 0.02.
 
