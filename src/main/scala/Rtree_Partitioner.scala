@@ -8,7 +8,7 @@ class My_Partitioner(numParts:Int) extends Partitioner
   override def numPartitions:Int=numParts
   override def getPartition(key:Any):Int=
   {
-    val id=key.toString.toInt                               //将c_id的第一位的字字母'D'去掉,将1000个快递员分成numParts个分区
+    val id=key.toString.toInt                               
     return id                                  
   }
   override def equals(other:Any):Boolean=other match
