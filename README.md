@@ -17,7 +17,7 @@ The following commands can be used to submit a spark application. In this applic
 spark-submit \
   --class "Logistics" \
   --master yarn \
-  --jars ./lib/opencsv-4.0.jar,./lib/archery_2.10-MDVRPTW_6 \
+  --jars ./lib/opencsv-4.0.jar,./lib/archery_2.10-MDVRPTW_6.jar \
   --deploy-mode cluster \
   --num-executors 20 \
   --executor-memory 4g \
